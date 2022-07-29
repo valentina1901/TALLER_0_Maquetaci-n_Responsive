@@ -56,12 +56,6 @@ h1,h2,h3,h4,h5{
 
 section{
     display: flex;
-    flex-wrap: wrap;
-}
-
-.container{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .container img{
@@ -70,11 +64,13 @@ section{
 }
 
 .container p{
+    background-color: rgba(0,-0,0,0.4);
+    padding: 2rem;
     font-size: 3rem;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 30rem;
-    left: 3rem; 
+    top: 28rem;
+    left: 1rem; 
 }
 
 .container2{
@@ -100,7 +96,7 @@ section{
 }
 
 #features{
-    background: url(../img/index/bg-features.png);
+    background: url(../img/bg-features.png);
     color: white;
     padding-top: 1rem;
 }
@@ -142,5 +138,28 @@ section{
 
 .feature-black{
     background-color: rgba(0,0,0,0.59);
+}
+
+iframe{
+    display: flex;
+    padding: 2rem;
+    width: 90rem;
+    height: 20rem;
+}
+
+.maps{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer{
+    text-align: center;
+}
+
+hr{
+    width: 50%; 
+    margin: 0 25% 0 25%;
+    display: flex;
+    color: var(--azulclaro);
 }
 
