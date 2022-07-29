@@ -162,4 +162,11 @@ hr{
     display: flex;
     color: var(--azulclaro);
 }
-
+.usuarios{
+    text-align: center;
+    color: var(--blanco);
+    padding: 1rem;
+}
+.usuarios h2{
+    text-align: center;
+}
