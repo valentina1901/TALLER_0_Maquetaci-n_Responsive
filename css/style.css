@@ -54,6 +54,26 @@ h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
 
+.social{
+    position: fixed;
+    right: 0;
+    top: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+    background-color: var(--Magenta);
+
+}
+.reserva{
+    color: var(--blanco);
+    text-decoration: none;
+    padding: .6rem;
+    display: flex;
+    transition: all .5s;
+}
+
+
 section{
     display: flex;
 }
