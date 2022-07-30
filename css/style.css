@@ -191,6 +191,8 @@ iframe{
 
 footer{
     text-align: center;
+    padding: 1rem;
+    margin: 1rem;
 }
 
 hr{
@@ -200,10 +202,26 @@ hr{
     color: var(--azulclaro);
 }
 .usuarios{
-    text-align: center;
+    display: flex;
+    background-color: var(--negro);
     color: var(--blanco);
-    padding: 1rem;
+    padding: 3rem;
+    justify-content: center;
+    font-size: 2em;
 }
-.usuarios h2{
-    text-align: center;
+
+.comentarios{
+    color: white;
+    padding: 3rem;
+    display: inline-block;
+    height: 11rem;
+    width: 78.22rem;
+    position: relative;
+
+}
+
+.coment{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
 }
