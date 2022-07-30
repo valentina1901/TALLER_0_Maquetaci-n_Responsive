@@ -201,6 +201,7 @@ hr{
     display: flex;
     color: var(--azulclaro);
 }
+
 .usuarios{
     display: flex;
     background-color: var(--negro);
@@ -210,18 +211,111 @@ hr{
     font-size: 2em;
 }
 
-.comentarios{
-    color: white;
+.usuarios h1{
+    margin-bottom: 2rem;
+}
+
+/*generando comentarios*/
+.cometarios{
+    display: flex;
+    background-color: var(--negro);
     padding: 3rem;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.circuloimg{
+    border-radius: 1%;
+    color: var(--blanco);
+    padding: 2rem;
+    display: flex;
+    width: 290px;
+    height: 110px;
+    background: url(../img/Group\ 200.svg);
+    margin: 50px;
+
+}
+
+.circuloimg img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+  
+  /* ocultamos los radiobuttons */
+  /*estrellas */
+  input[name=rating] {
+    display: none;
+  }
+  
+  .fichas-listado-v2 .voto .voto-estrellas{
+    display: block;
+    unicode-bidi: bidi-override;
+    width: 10%;
+    margin-top: 10px;
+  }
+  .fichas-listado-v2 .voto .voto-estrellas i{
+    color: var(--blanco);
+    font-size: 20px;
+    padding-right: 2px;
+  }
+  
+  .fichas-listado-v2 .voto .voto-estrellas i:hover{
+    cursor: pointer;
+    color: var(--blanco);
+  }
+  .fichas-listado-v2 .voto .voto-estrellas i.fa-star,
+  .fichas-listado-v2 .voto .voto-estrellas:hover i{
+    color:var(--Magenta);
+  }
+  .fichas-listado-v2 .voto .voto-estrellas:hover i:before{
+    content: "\f006";
+  }
+  .fichas-listado-v2 .voto .voto-estrellas i.fa-star-o:hover:before,
+  .fichas-listado-v2 .voto .voto-estrellas i:hover ~ i:before{
+    content: "\f006";
+    color: var(--blanco);
+  }
+
+  .piepag{
+    width: 96%;
+    background-color: var(--negro);
+  }
+
+  .piepag .grup1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    
+  }
+
+  .piepag .grup1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .piepag .grup1 .box p{
+    color: var(--blanco);
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .piepag .grup1 .red-social a{
     display: inline-block;
-    height: 11rem;
-    width: 78.22rem;
-    position: relative;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    left: 50px;
+    color: var(--blanco);
+  }
 
-}
-
-.coment{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-}
+  .piepag .grup1 .fa-solid{
+    color: var(--blanco);
+  }
