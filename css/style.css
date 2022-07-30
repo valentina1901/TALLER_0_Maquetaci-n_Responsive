@@ -50,6 +50,15 @@ img{
     padding: 1rem;
 }
 
+.botonsesion{
+    background-color: var(--azuloscuro);
+    padding: 0.6rem;           /*espacio alrededor texto*/
+    color: #ffffff;          /*color texto*/
+    text-decoration: none;     /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 4px;        /*bordes redondos*/
+}
+
 h1,h2,h3,h4,h5{
     font-family: 'Marcellus', serif;
 }
@@ -73,14 +82,13 @@ h1,h2,h3,h4,h5{
     transition: all .5s;
 }
 
-
 section{
     display: flex;
 }
 
 .container img{
-    height: 34.79em;
-    flex-wrap: wrap;
+    position: relative;
+    display: inline-block;
 }
 
 .container p{
@@ -94,6 +102,7 @@ section{
 }
 
 .container2{
+    padding: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
