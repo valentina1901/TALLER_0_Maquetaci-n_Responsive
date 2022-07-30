@@ -127,14 +127,20 @@ section{
 #features{
     background: url(../img/bg-features.png);
     color: white;
-    padding-top: 1rem;
+    padding: 3rem;
+    display: inline-block;
+    height: 11rem;
+    width: 78.22rem;
+    position: relative;
 }
 
 .features-title{
     background-color: rgba(0,0,0,0.35);
     text-align: center;
-    padding: 0.5rem;
-    font-size: 1.5em;
+    padding: 1rem;
+    font-size: 2em;
+    margin-left: -3rem;
+    margin-right: -3rem;
 }
 
 .features-description{
@@ -145,9 +151,9 @@ section{
 
 .feature{
     width: 25%;
-    min-width: 180px;
-    max-width: 230px;
-    margin: 0.8rem;
+    min-width: 150px;
+    max-width: 210px;
+    margin: 0.7rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
