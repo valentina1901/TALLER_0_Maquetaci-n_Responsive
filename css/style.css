@@ -319,3 +319,36 @@ hr{
   .piepag .grup1 .fa-solid{
     color: var(--blanco);
   }
+
+  body .login {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: url(../img/hotelogin.jpg);
+  }
+
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .formu {
+    background: url(../img/login.jpg);
+    width: 250px;
+    border-radius: 3px;
+    padding: 100px 40px;
+    box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
+  }
+
+  .logologin img{
+    height: 3rem;
+    padding-left: 5px;
+    margin-bottom: 10px;
+  }
+  .formcontainer{
+    margin-bottom: 10px;
+  }
+
+  
