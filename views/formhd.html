@@ -11,6 +11,101 @@
 
 </head>
 <body class="bodyform">
-    
+    <div class="formhuesped">
+        <form class="formuhuesped">
+            <div class="h1form">
+                <h1>
+                    Regístrate
+                </h1>
+            </div>
+            
+          <div class="input_container">
+            <div class="input_div">
+            <label class="labelform">Tipo de documento</label>
+            <select name="menu">
+                <option value="">Escoge una opcion</option>
+                <option>Cedula</option>
+                <option>Tarjeta de identidad</option>
+            </select>
+             </div>
+
+             <div class="input_div">
+            <label class="labelform">Numero de documento</label>
+            <input  class="inputform" type="number">
+            </div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_div">
+            <label class="labelform">Nombres</label>
+            <input  class="inputform" type="text">
+            </div>
+
+            <div class="input_div">
+            <label class="labelform">Apellidos</label>
+            <input  class="inputform" type="text">
+          </div>
+          </div>
+
+          <div class="input_container">
+            <div>
+            <label class="labelform">Fecha nacimiento</label>
+            <input class="inputform" type="date">
+            </div>
+
+            <div class="input_div" class="input_div">
+            <label class="labelform">Genero</label>
+            <input type="radio" name="boton" value="1">Mujer
+            <input type="radio" name="boton" value="2">Hombre
+            <input type="radio" name="boton" value="3">Otro
+          </div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_div">
+            <label class="labelform">Email</label>
+            <input class="inputform" type="email">
+            </div>
+
+            <div class="input_div">
+            <label class="labelform">Teléfono de contacto</label>
+            <input class="inputform" type="text">
+            </div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_div">
+            <label class="labelform">País de origen</label>
+            <input class="inputform" type="text">
+            </div>
+            <div class="input_div">
+            <label class="labelform">Foto</label>
+            <input class="inputform" type="file" 
+             name="adjunto" accept=".pdf,.jpg,.png" multiple>
+             </div>
+          </div>
+
+          <div class="input_container">
+            <div class="input_div">
+            <label class="labelform">Contraseña</label>
+            <input class="inputform" type="password">
+             </div>
+             <div class="input_div">
+            <label class="labelform">Confirmar contraseña</label>
+            <input class="inputform" type="password">
+          </div>
+         </div> 
+
+          <div class="terminoscondiciones">
+            <input type="checkbox">
+            <label class="labelform" >Acepto Terminos y Condiciones</label>
+          </div>
+
+          <div class="botonform">
+          <a href="#">Ingresar</a>
+          </div>
+        </form>
+      </div>
+      <!--<script src="../js/diseño.js"></script>-->
 </body>
 </html>
