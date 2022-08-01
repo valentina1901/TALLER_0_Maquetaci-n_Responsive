@@ -402,3 +402,9 @@ hr{
     padding-right:100px;
     margin-top:10px ;
     }
+
+    .bodyform{
+    background: url(../img/fondoform.jpg); 
+    background-size: cover;
+    background-repeat:no-repeat;
+    }
