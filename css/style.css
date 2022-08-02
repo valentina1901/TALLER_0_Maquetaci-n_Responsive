@@ -334,7 +334,7 @@ hr{
   .bienvenido{
     background-color: var(--azuloscuro);
     margin-right: 50%;
-    height: 608px;
+    height: 100%;
     opacity: 90%;
   }
   
@@ -347,15 +347,15 @@ hr{
   }
 
   .bienvenido img{
-    margin-top: 50%;
+    margin-top: 70%;
     width: 80%;
     margin-left: 10%;
   }
 
   .bienvenido h1{
-    justify-content: center;
     color: var(--blanco);
-    margin-left: 10%;
+    margin-left: 25%;
+    margin-top: 20px;
   }
 
   .form {
@@ -391,17 +391,8 @@ hr{
     text-shadow: 0.1em 0.1em 0.2em black
   }
 
-  .registro{
-    margin-top: 20px;
-  }
-
   .sincuenta{
     color: var(--blanco);
-    text-decoration: none;
-  }
-
-  .registrar{
-    color: var(--negro2);
     text-decoration: none;
   }
 
@@ -449,31 +440,37 @@ hr{
   .formhuesped{
     display: flex;
     justify-content: right;
-    
-    margin-right: 60px;
+    margin-right: 70px;
     align-items: center;
     height: 100vh;
   }
 
   .formuhuesped{
     background: url(../img/blanco.jpg);
-    width: 250px;
+    width: 300px;
     border-radius: 3px;
-    padding: 70px 180px;
+    padding: 80px 250px;
     box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
     opacity: 90%;
     display: inline-block;
   }
 
+  .formhuesped .input_container{
+    margin-right: 90%;
+  }
+  
   .input_div{
     display: flex;
     flex-direction:column;
+    margin-bottom: 10px;
+    width: 120%;
+
   }
   
   .input_container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 25px;
+    grid-gap: 60px;
   }
 
   .botonform{
@@ -481,15 +478,15 @@ hr{
   }
 
   .botonform a{
-  text-decoration: none;
-  padding: 5px;
-  font-size: 15px;
-  color: #ffffff;
-  background-color: var(--negro2);
-  border-radius: 2px;
-  padding-left:50px;
-  padding-right:50px;
-  margin-top:10px ;
-  right: 40px;
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: var(--negro2);
+    border-radius: 2px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-top:10px ;
+    margin-left: 15%;
   }
 
