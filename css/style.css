@@ -136,6 +136,7 @@ section{
     height: 11rem;
     width: 78.22rem;
     position: relative;
+    width: 92.5%;
 }
 
 .features-title{
@@ -219,14 +220,49 @@ hr{
 .usuarios h1{
     margin-bottom: 2rem;
 }
+/*cometarios*/
+.cajascoment{
+  border:3px dashed black;
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  position: absolute;
+  
+}
+
+.caja1, .caja2, .caja3{
+  background-image: url(../img/Group\ 200.svg);
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: left;
+}
+
+.margenderecha{
+  margin-right: 5%;
+}
+
+.diego{
+  text-align: center;
+  font-family: 'Marcellus', serif;
+  font-size: 1.5em;
+  color: var(--blanco);
+}
+
+
+
 
 /*generando comentarios*/
+
 .cometarios{
     display: flex;
     flex-direction: row;
     font-size: 2em;
     position: absolute;
 }
+
 
 .circuloimg{
     border-radius: 1%;
@@ -249,7 +285,7 @@ hr{
 .estrellas{
     margin-right: 45%;
     font-size: 30px;
-    direction: rtl;/* right to left */
+    direction: rtl; /* right to left */
     unicode-bidi: bidi-override;/* bidi de bidireccional */
 }
   
