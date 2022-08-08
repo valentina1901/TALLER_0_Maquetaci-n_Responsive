@@ -220,15 +220,14 @@ hr{
 .usuarios h1{
     margin-bottom: 2rem;
 }
+
 /*cometarios*/
 .cajascoment{
   border:3px dashed black;
   height: 200px;
   width: 80%;
   margin: 0 auto;
-  margin-top: 2%;
-  position: absolute;
-  
+  display: flex;
 }
 
 .caja1, .caja2, .caja3{
@@ -236,8 +235,9 @@ hr{
   width: 30%;
   height: 100%;
   float: left;
-  background-size: cover;
+  background-size:cover;
   background-position: left;
+  color: var(--blanco);
 }
 
 .margenderecha{
@@ -245,48 +245,36 @@ hr{
 }
 
 .diego{
-  text-align: center;
   font-family: 'Marcellus', serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: var(--blanco);
+  margin-left: 10%;
+  background-color: black;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7%;
 }
-
-
-
-
-/*generando comentarios*/
-
-.cometarios{
-    display: flex;
-    flex-direction: row;
-    font-size: 2em;
-    position: absolute;
-}
-
 
 .circuloimg{
     border-radius: 1%;
-    color: var(--blanco);
-    padding: 2rem;
-    display: flex;
-    width: 290px;
-    height: 110px;
-    background: url(../img/Group\ 200.svg);
-    margin: 50px;
-
 }
 
 .circuloimg img{
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .estrellas{
     margin-right: 45%;
     font-size: 30px;
-    direction: rtl; /* right to left */
-    unicode-bidi: bidi-override;/* bidi de bidireccional */
+    direction: rtl;        
+    unicode-bidi: bidi-override;
+    margin-left: 35%;
+    background-color: black;
+    display: inline-block; 
 }
   
 .labelestre{
@@ -306,10 +294,14 @@ input[type="radio"]:checked ~ label {
   color: var(--blanco);
 }
 
-  .piepag{
+.parrafocaja{  
+  padding: 2%;
+}
+
+.piepag{
     width: 96%;
     background-color: var(--negro);
-  }
+}
 
   .piepag .grup1{
     width: 100%;
