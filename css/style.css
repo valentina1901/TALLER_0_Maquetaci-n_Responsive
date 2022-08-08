@@ -11,6 +11,10 @@
   --Magenta: #9C2759;
   --blanco: #fff;
   --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+  --width:300px;
+  --padding: 10px;
+  --width-collapsed: 50px;
+
 }
 
 *{
@@ -132,6 +136,7 @@ section{
     height: 11rem;
     width: 78.22rem;
     position: relative;
+    width: 92.5%;
 }
 
 .features-title{
@@ -216,37 +221,60 @@ hr{
     margin-bottom: 2rem;
 }
 
-/*generando comentarios*/
-.cometarios{
-    display: flex;
-    flex-direction: row;
-    font-size: 2em;
-    position: absolute;
+/*cometarios*/
+.cajascoment{
+  border:3px dashed black;
+  height: 200px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.caja1, .caja2, .caja3{
+  background-image: url(../img/Group\ 200.svg);
+  width: 30%;
+  height: 100%;
+  float: left;
+  background-size:cover;
+  background-position: left;
+  color: var(--blanco);
+}
+
+.margenderecha{
+  margin-right: 5%;
+}
+
+.diego{
+  font-family: 'Marcellus', serif;
+  font-size: 1.3em;
+  color: var(--blanco);
+  margin-left: 10%;
+  background-color: black;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 7%;
 }
 
 .circuloimg{
     border-radius: 1%;
-    color: var(--blanco);
-    padding: 2rem;
-    display: flex;
-    width: 290px;
-    height: 110px;
-    background: url(../img/Group\ 200.svg);
-    margin: 50px;
-
 }
 
 .circuloimg img{
     width: 60px;
     height: 60px;
     border-radius: 100%;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .estrellas{
     margin-right: 45%;
     font-size: 30px;
-    direction: rtl;/* right to left */
-    unicode-bidi: bidi-override;/* bidi de bidireccional */
+    direction: rtl;        
+    unicode-bidi: bidi-override;
+    margin-left: 35%;
+    background-color: black;
+    display: inline-block; 
 }
   
 .labelestre{
@@ -266,10 +294,14 @@ input[type="radio"]:checked ~ label {
   color: var(--blanco);
 }
 
-  .piepag{
+.parrafocaja{  
+  padding: 2%;
+}
+
+.piepag{
     width: 96%;
     background-color: var(--negro);
-  }
+}
 
   .piepag .grup1{
     width: 100%;
@@ -482,4 +514,180 @@ input[type="radio"]:checked ~ label {
     margin-top:10px ;
     margin-left: 15%;
   }
+
+  .bodydashboard{
+    background: url(../img/bodydashboard.jpg);
+    background-repeat:no-repeat ;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+
+  }
+
+  .body-expanded{
+    margin-left: var(--width);
+  }
+
+  #main-container{
+    color: var(--blanco);
+  }
+
+  #menudash{
+    background-color: var(--azulnegro);
+    color: var(--blanco);
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  #menudash a{
+    color: var(--blanco);
+    text-decoration: none;
+  }
+
+  /*header*/
+  #menudash #header{
+    box-sizing: border-box;
+    border-bottom: solid 1px var(--azuloscuro);
+  }
+
+  #menudash #header #title{
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  #menudash #header #title, #menudash #header #menu-btn{
+    vertical-align:middle;
+  }
+
+  #menudash #header #manu-btn{
+    display: inline-block;
+  }
+
+  /*boton*/
+  #menudash #header #menu-btn{
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+  }
+  /*division*/
+  #menudash #profile{
+    padding: var(--padding) 0;
+    margin-left: 25%;
+  }
+
+  #menudash #photo img{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 15%;
+  }
+
+  #manudash #profile, #menudash #profile #nombre{
+    font-size: 120%;
+  }
+
+  #menudash #profile, #menudash #profile #name{
+    font-size: 90%;
+    overflow: hidden;
+  }
+  /*el tamaño del icono es el ancho*/
+  #menudash #menu-items .item{
+    width: var(--width);
+  }
+
+  #menudash #menu-items .item .icon,
+  #menudash #menu-items .item .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  #menudash #menu-items .item a{
+    display: block;
+  }
+
+  #menudash #menu-items .item a:hover{
+    background-color: var(--azuloscuro);
+  }
+
+  #menudash #menu-items .item .icon{
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+  }
+
+  #menudash #menu-items .item .title{
+    padding: var(--padding) 0;
+  }
+
+
+
+  #menudash #menu-items .apart{
+    width: var(--width);
+  }
+
+  #menudash #menu-items .apart .icono,
+  #menudash #menu-items .apart .title{
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  #menudash #menu-items .apart a{
+    display: block;
+  }
+
+  #menudash #menu-items .apart a:hover{
+    background-color: var(--azuloscuro);
+  }
+
+  #menudash #menu-items .apart .icono{
+    box-sizing: border-box;
+    margin-top: 40%;
+    margin-right: 5%;
+    margin-left: 35%;
+    width: var(--width-collapsed);
+  }
+
+  #menudash #menu-items .apart .title{
+    margin-top: 40%;
+  }
+
+  .formudash{
+    background: url(../img/blanco.jpg);
+    width: 300px;
+    margin-left: 30%;
+    border-radius: 3px;
+    padding: 80px 250px;
+    box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
+    opacity: 90%;
+    display: inline-block;
+  }
+
+  #formudash #foto {
+    margin-right: 20%;
+    text-decoration: none;
+  }
+
+  .botondash a{
+    text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: var(--negro2);
+    border-radius: 2px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-top:10% ;
+    margin-right: 100%;
+  }
+
+
+  
+
 
