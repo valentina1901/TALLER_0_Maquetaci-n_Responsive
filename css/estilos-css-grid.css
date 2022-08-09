@@ -43,7 +43,6 @@
     }
 }
   
-
 #container-grid {
     display: grid;
     grid-template:
@@ -54,23 +53,6 @@
         "ubicacion" auto
         "opinion" auto
         "footer" auto
-}
-
-/*Estilos Grid Items*/
-header {
-    grid-area: header;
-}
-nav {
-    grid-area: navbar;
-}
-main {
-    grid-area: main;
-}
-aside {
-    grid-area: sidebar;
-}
-footer {
-    grid-area: footer;
 }
 
 /*Resolución tabletas*/
@@ -161,7 +143,7 @@ nav a:hover {
 }
 
 #banner {
-    background-image: url('../img/index//slide1.jpg');
+    background-image: url('../img/slide1.jpg');
     background-size: cover;
     background-position: 50% 50%;
     min-height: 400px;
