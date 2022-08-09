@@ -24,11 +24,19 @@
 
 /*Resolución resoluciones macro*/
 @media screen and (min-width:1308px) {
-    .container-grid{
-         max-width: 1200px;
-         margin: 0 auto;
-     }
-    }    
+    body{
+        background-color: #EAEAEA;
+    }
+    #container-grid{
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+    nav{
+        width: 100%;
+        max-width: 1300px;
+    }
+}
+  
 
 
 #container-grid{
