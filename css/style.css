@@ -95,7 +95,7 @@ section{
     display: inline-block;
 }
 
-.container p{
+.parrafoimg{
     background-color: rgba(0,-0,0,0.4);
     padding: 2rem;
     font-size: 3rem;
@@ -194,6 +194,20 @@ iframe{
     font-size: 1.5em;
 }
 
+.maps1 {
+  overflow:hidden;
+  padding-bottom:400px; 
+  position:relative;
+  height:0;
+}
+.maps1 iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
 footer{
     text-align: center;
     padding: 1rem;
@@ -223,7 +237,7 @@ hr{
 
 /*cometarios*/
 .cajascoment{
-  border:3px dashed black;
+  border:3px ;
   height: 200px;
   width: 80%;
   margin: 0 auto;
@@ -249,7 +263,6 @@ hr{
   font-size: 1.3em;
   color: var(--blanco);
   margin-left: 10%;
-  background-color: black;
   display: inline-block;
   vertical-align: top;
   margin-top: 7%;
@@ -273,7 +286,6 @@ hr{
     direction: rtl;        
     unicode-bidi: bidi-override;
     margin-left: 35%;
-    background-color: black;
     display: inline-block; 
 }
   
@@ -301,6 +313,7 @@ input[type="radio"]:checked ~ label {
 .piepag{
     width: 96%;
     background-color: var(--negro);
+    
 }
 
   .piepag .grup1{
