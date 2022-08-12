@@ -94,7 +94,6 @@ section{
     position: relative;
     display: inline-block;
 }
-
 .parrafoimg{
     background-color: rgba(0,-0,0,0.4);
     padding: 2rem;
@@ -106,10 +105,19 @@ section{
 }
 
 .container2{
+    padding-top: 10px;
     padding: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.contai{
+  margin: 20px 20px 20px 20px;
+  font-family: 'Marcellus', serif;
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
 }
 
 .container2 p{
@@ -282,8 +290,7 @@ hr{
 
 .estrellas{
     margin-right: 45%;
-    font-size: 30px;
-    direction: rtl;        
+    font-size: 30px;    
     unicode-bidi: bidi-override;
     margin-left: 35%;
     display: inline-block; 
@@ -400,20 +407,20 @@ input[type="radio"]:checked ~ label {
   }
 
   .formu {
-    background: url(../img/login.jpg);
+    background: url(../img/relogin.PNG);
+    background-size: cover;
+    background-repeat:no-repeat;
     width: 250px;
     border-radius: 3px;
-    padding: 40px 60px;
-    box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
-    
+    padding: 40px 75px;
+    opacity: 85%;
   }
 
   .logologin img{
-    height:150px; 
-    width:150px; 
-    top:0; 
-    left:0; 
-    padding-top:0;
+    height:100px; 
+    width:100px; 
+    
+    left:200px; 
   }
 
   .formcontainer{
@@ -443,9 +450,14 @@ input[type="radio"]:checked ~ label {
     padding-left:44px;
     padding-right:44px;
   }
-
+  
   .registro{
-    margin-top: 12px;
+    margin-top: 10px;
+  }
+
+  .registrar{
+    color: var(--negro2);
+    text-decoration: none;
   }
 
   .boton{
