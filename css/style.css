@@ -94,14 +94,15 @@ section{
     position: relative;
     display: inline-block;
 }
-.parrafoimg{
-    background-color: rgba(0,-0,0,0.4);
+
+.container p{
+  background-color: rgba(0,-0,0,0.3);
     padding: 2rem;
     font-size: 3rem;
-    color: rgb(255, 255, 255);
+    color:var(--blanco);
     position: absolute;
-    top: 28rem;
-    left: 1rem; 
+    top: 70%;
+    left:0; 
 }
 
 .container2{
@@ -116,7 +117,7 @@ section{
   margin: 20px 20px 20px 20px;
   font-family: 'Marcellus', serif;
   font-size: 15px;
-  color: #000;
+  color:var(--negro2);
   text-decoration: none;
 }
 
@@ -145,6 +146,9 @@ section{
     width: 78.22rem;
     position: relative;
     width: 92.5%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
 }
 
 .features-title{
@@ -196,10 +200,10 @@ iframe{
 }
 
 .maps{
-    margin: 1rem;
     padding: 1rem;
     text-align: center;
     font-size: 1.5em;
+    margin-top: 31px;
 }
 
 .maps1 {
@@ -209,11 +213,9 @@ iframe{
   height:0;
 }
 .maps1 iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
+  
+  width: 100%;
+  margin: 2%;
 }
 
 footer{
@@ -243,7 +245,7 @@ hr{
     margin-bottom: 2rem;
 }
 
-/*cometarios*/
+/*comentarios*/
 .cajascoment{
   border:3px ;
   height: 200px;
@@ -315,6 +317,7 @@ input[type="radio"]:checked ~ label {
 
 .parrafocaja{  
   padding: 2%;
+  margin-bottom: 2%;
 }
 
 .piepag{
@@ -351,9 +354,9 @@ input[type="radio"]:checked ~ label {
   .piepag .grup1 .red-social a{
     display: inline-block;
     text-decoration: none;
-    width: 25px;
-    height: 25px;
-    left: 50px;
+    width: 15px;
+    height: 15px;
+    right: 10px;
     color: var(--blanco);
   }
 
@@ -416,11 +419,9 @@ input[type="radio"]:checked ~ label {
     opacity: 85%;
   }
 
-  .logologin img{
-    height:100px; 
-    width:100px; 
-    
-    left:200px; 
+  .logologin {
+    height:90px; 
+    width:150px; 
   }
 
   .formcontainer{
@@ -694,16 +695,46 @@ input[type="radio"]:checked ~ label {
     display: inline-block;
   }
 
-  #formudash #foto {
-    margin-right: 20%;
+
+  .fotoangie{
+   width: 50%;
+   height: 50%;
+  }
+
+  .angieinocos {
+    background-color: var(--azuloscuro);     
+    text-transform: uppercase; /*capitalización texto*/
+    border-radius: 4px;        /*bordes redondos*/
+    width: 30%;
+    padding-left: 20%;
+    
+  }
+  .angieinocos a{
+    color: var(--blanco);
+    text-decoration: none;     /*decoración texto*/
+    padding: 0.6rem;
+    font-size: 20px;
+    background-size: 20%;
+  }
+
+  .botondash1 a{
     text-decoration: none;
+    padding: 7px;
+    font-size: 20px;
+    color: var(--blanco);
+    background-color: var(--negro2);
+    border-radius: 2px;
+    padding-left:70px;
+    padding-right:70px;
+    margin-top:20% ;
+    margin-right: 100%;
   }
 
   .botondash a{
     text-decoration: none;
     padding: 7px;
     font-size: 20px;
-    color: #ffffff;
+    color: var(--blanco);
     background-color: var(--negro2);
     border-radius: 2px;
     padding-left:70px;
@@ -713,6 +744,16 @@ input[type="radio"]:checked ~ label {
   }
 
 
-  
+  /*img {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+  }
+  .imgA1 {
+    z-index: 1;
+  }
+  .imgB1 {
+    z-index: 3;
+  }  */
 
 
