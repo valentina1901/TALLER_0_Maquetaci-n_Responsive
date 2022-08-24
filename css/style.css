@@ -82,16 +82,16 @@ img{
   position: relative;
 }
 
-.text-slide{
+.text-slider{
   position: absolute;
   color: var(--blanco);
-  top: 69%;
+  font-size: 40px;
   background-color: rgba(0, 0, 0, 0.35);
   padding: 2.1rem;
-  width: 70%;
-  font-size: 36.5px;
-  height: 200px;
+  width: 50%;
+  top: 70%;
 }
+
 
 /* Slideshow container */
 .slideshow-container {
@@ -547,7 +547,7 @@ input[type="radio"]:checked ~ label {
     background: url(../img/relogin.PNG);
     background-size: cover;
     background-repeat:no-repeat;
-    width: 250px;
+    width: 400px;
     border-radius: 3px;
     padding: 40px 75px;
     opacity: 85%;
@@ -582,8 +582,9 @@ input[type="radio"]:checked ~ label {
 
   .inputlogin{
     display: block;
-    padding-left:44px;
-    padding-right:44px;
+    padding-left:40px;
+    padding-right:40px;
+    
   }
   
   .registro{
@@ -611,6 +612,7 @@ input[type="radio"]:checked ~ label {
   margin-top:5px ;
   }
 
+  @media screen and (min-width: 320px){
   .bodyform{
   background: url(../img/fondoform.jpg); 
   background-size: cover;
@@ -640,23 +642,21 @@ input[type="radio"]:checked ~ label {
     display: inline-block;
   }
 
-  .formhuesped .input_container{
-    margin-right: 90%;
-  }
-  
-  .input_div{
-    display: flex;
-    flex-direction:column;
-    margin-bottom: 10px;
-    width: 120%;
-
-  }
-  
-  .input_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 60px;
-  }
+ .colum{
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em 0 0;
+  width: 100%;
+ }
+ 
+ .colum .input{
+  padding:0.5;
+  width: 90%;
+  margin: 0.5em 0 0.5em 0;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 0;
+ }
 
   .botonform{
     margin-top: 40px;
@@ -673,7 +673,7 @@ input[type="radio"]:checked ~ label {
     padding-right:70px;
     margin-top:10px ;
     margin-left: 15%;
-  }
+  }}
 
   .bodydashboard{
     background: url(../img/bodydashboard.jpg);
@@ -877,17 +877,70 @@ input[type="radio"]:checked ~ label {
     margin-right: 100%;
   }
 
+/*busqueda habitaciones*/
+.botonbush{
+  display: flex;
+  padding: 0%;
+  margin-left: 17%;
+  margin-top: 13%;
+  width: 17.5%;
 
-  /*img {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-  }
-  .imgA1 {
-    z-index: 1;
-  }
-  .imgB1 {
-    z-index: 3;
-  }  */
+}
+
+.botonbush a{
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--blanco);
+  background-color: var(--azuloscuro);
+  border-radius: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.formbus{
+  background: url(../img/blanco.jpg);
+  display: flex;
+  width: 22%;
+  margin-left: 14.5%;
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-top: 6%;
+  padding-bottom: 6%  ;
+  box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
+}
+
+.formform{
+  padding-right: 10%;
+  padding-left: 20%;
+  margin: 0%;
+}
+
+.botonverh{
+  display: flex;
+  padding: 0%;
+  margin-left: 20%;
+  margin-top: 13%;
+  width: 17.5%;
+}
+
+.botonverh a{
+  text-decoration: none;
+  font-size: 10px;
+  color: var(--blanco);
+  background-color: var(--negro2);
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.habi{
+  background-color: var(--azuloscuro);
+  margin-right: 50%;
+  height: 100%;
+  opacity: 90%;
+}
+
+
 
 
