@@ -77,6 +77,22 @@ img{
 
 * {box-sizing:border-box}
 
+.primerimg{
+  width: 100%;
+  position: relative;
+}
+
+.text-slide{
+  position: absolute;
+  color: var(--blanco);
+  top: 69%;
+  background-color: rgba(0, 0, 0, 0.35);
+  padding: 2.1rem;
+  width: 70%;
+  font-size: 36.5px;
+  height: 200px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -85,8 +101,12 @@ img{
 }
 
 /* Hide the images by default */
-.mySlides {
+.slide {
   display: none;
+}
+
+.slide img{
+  width: 100%;
 }
 
 /* Next & previous buttons */
