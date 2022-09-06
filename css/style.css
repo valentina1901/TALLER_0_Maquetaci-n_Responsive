@@ -536,23 +536,6 @@ input[type="radio"]:checked ~ label {
     margin-top: 20px;
   }
 
-  .form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .formu {
-    background: url(../img/relogin.PNG);
-    background-size: cover;
-    background-repeat:no-repeat;
-    width: 400px;
-    border-radius: 3px;
-    padding: 40px 75px;
-    opacity: 85%;
-  }
-
   .logologin {
     height:90px; 
     width:150px; 
@@ -611,7 +594,37 @@ input[type="radio"]:checked ~ label {
   padding-right:100px;
   margin-top:5px ;
   }
-
+  .bodyform{
+    background: url(../img/fondoform.jpg); 
+    background-size: cover;
+    background-repeat:no-repeat;
+    }
+  
+    .h1f{
+      text-align: center;
+      font-size: 25px;
+    }
+  
+    .formhuesped{
+      grid-area: formhuesped;
+      background: url(../img/blanco.jpg);
+      margin: 10px;
+      border-radius: 3px;
+    }
+  
+    
+    .colum1{
+      margin: 0px 20px;
+      padding: 20px 0px;
+    }
+    
+    .colum2{
+      display: none;
+    }
+    
+    .labelf{
+      margin-top: 15px;
+    }
   @media screen and (min-width: 320px){
   .bodyform{
   background: url(../img/fondoform.jpg); 
@@ -619,44 +632,30 @@ input[type="radio"]:checked ~ label {
   background-repeat:no-repeat;
   }
 
-  .h1form{
+  .h1f{
     text-align: center;
     font-size: 25px;
   }
 
   .formhuesped{
-    display: flex;
-    justify-content: right;
-    margin-right: 70px;
-    align-items: center;
-    height: 100vh;
-  }
-
-  .formuhuesped{
+    grid-area: formhuesped;
     background: url(../img/blanco.jpg);
-    width: 300px;
+    margin: 10px;
     border-radius: 3px;
-    padding: 80px 250px;
-    box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
-    opacity: 90%;
-    display: inline-block;
   }
 
- .colum{
-  display: flex;
-  flex-direction: column;
-  padding: 0 1em 0 0;
-  width: 100%;
- }
- 
- .colum .input{
-  padding:0.5;
-  width: 90%;
-  margin: 0.5em 0 0.5em 0;
-  font-size: 1em;
-  border-radius: 5px;
-  border: 0;
- }
+  .colum1{
+    margin: 0px 20px;
+    padding: 20px 0px;
+  }
+  
+  .colum2{
+    display: none;
+  }
+  
+  .labelf{
+    margin-top: 15px;
+  }
 
   .botonform{
     margin-top: 40px;
