@@ -632,14 +632,15 @@ input[type="radio"]:checked ~ label {
     height: 100vh;
   }
 
-  .formuhuesped{
+  .formhuesped{
     background: url(../img/blanco.jpg);
-    width: 300px;
+    width: 100px;
     border-radius: 3px;
-    padding: 80px 250px;
+    padding: 40px 400px;
     box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
     opacity: 90%;
     display: inline-block;
+    margin-left: 35%;
   }
 
  .colum{
