@@ -13,7 +13,6 @@
 
 </head>
 <body class="bodyform">
-    
       <div class="bienvenido">
         <img src="../img/Hotelia horizontal blanco.svg">
         <h1>Eres mas que bienvenido</h1>
@@ -27,6 +26,14 @@
           <div class="formuhuesped">
           <div class="colum1">
           <div class="form-group">
+
+    <div class="formhuesped">
+          <div class="colum1">
+            <h1 class="h1f">
+              Regístrate
+          </h1>
+          <div class="form-group">
+        
             <label for="Tipo">Tipo de documento</label>
             <select name="menu" class="form-select">
                 <option value="">Escoge una opcion</option>
@@ -90,16 +97,77 @@
             <input class="form-control" type="password">
           </div>
         </div>
-          <div class="terminoscondiciones">
-            <input type="checkbox" onclick="alert()" >
-            <label for="">Acepto Terminos y Condiciones</label>
+=======
+            <label class="labelf"  for="nombres">Nombres</label>
+            <input name="nombres"  type="text">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="fecha">Fecha nacimiento</label>
+            <input name="fecha" type="date">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="email">Email</label>
+            <input name="email" type="email">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="pais">País de origen</label>
+            <input name="pais" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="password">Contraseña</label>
+            <input name="password" type="password">
+          </div>
+        </div>
+
+        <div class="colum2">
+          <div class="form-group">
+            <label class="labelf"  for="numerodoc">Numero de documento</label>
+            <input name="numerodoc" type="number">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="apellidos">Apellidos</label>
+            <input name="apellidos"  type="text">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  >Genero</label>
+            <div class="generos">
+            <input type="radio" name="boton" value="1">Mujer
+            <input type="radio" name="boton" value="2">Hombre
+            <input type="radio" name="boton" value="3">Otro
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="tel">Teléfono de contacto</label>
+            <input name="tel" type="text">
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="">Foto</label>
+            <input type="file" 
+             name="adjunto" accept=".pdf,.jpg,.png" multiple>
+          </div>
+          <div class="form-group">
+            <label class="labelf"  for="">Contraseña</label>
+            <input type="password">
           </div>
 
+          <div class="form-group">
+            <label class="labelf" for="">Confirmar contraseña</label>
+            <input type="password">
+          </div>
+          <div class="terminoscondiciones">
+            <input type="checkbox" onclick="alert()" >
+            <label class="labelf"  for="">Acepto Terminos y Condiciones</label>
+          </div>
           <div class="botonform">
           <a href="dashboardd.html">Ingresar</a>
           </div>
         </div>
       </div>
+            <a href="dashboardd.html">Ingresar</a>
+            </div>
+        </div> 
+      </div>
+</div>
       <script src="../js/diseño.js"></script>
 </body>
 </html>
