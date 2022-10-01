@@ -516,6 +516,12 @@ input[type="radio"]:checked ~ label {
     opacity: 90%;
   }
   
+  .bodyform{
+    display: grid;
+    grid-template: "header" 10% "formulario" auto;
+
+  }
+
   .bodyform .bienvenido{
     position: fixed;
     left: 0;
@@ -533,7 +539,7 @@ input[type="radio"]:checked ~ label {
   .bienvenido h1{
     color: var(--blanco);
     margin-left: 25%;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .form {
@@ -625,21 +631,16 @@ input[type="radio"]:checked ~ label {
   }
 
   .formhuesped{
-    display: flex;
-    justify-content: right;
-    margin-right: 70px;
-    align-items: center;
-    height: 100vh;
+    background-color: var(--blanco);
+    grid-area: formhuesped;
+    margin: 25px;
+    border-radius: 5px;
+
   }
 
   .formuhuesped{
-    background: url(../img/blanco.jpg);
-    width: 300px;
-    border-radius: 3px;
-    padding: 80px 250px;
-    box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
-    opacity: 90%;
-    display: inline-block;
+   margin: 0px 10px;
+   padding: 10px 0px;
   }
 
  .colum{
@@ -675,6 +676,37 @@ input[type="radio"]:checked ~ label {
     margin-left: 15%;
   }}
 
+  @media screen and (min-witdth:1024px){
+    .geners{
+      margin-top: -25px;
+    }
+
+    .formuhuesped{ 
+      display: grid;
+      grid-template:
+          "colum1 colum2" 100%/
+          50% 50%; 
+     }
+
+     .form-check{
+      margin-top: 5px;
+      margin-bottom: 4px;
+     }
+    .colum1{
+      grid-area: colum1;
+      padding: 15px;
+    }
+
+    .colum2{
+      grid-area: colum2;
+      padding: 15px;
+    }
+    .terminoscondiciones{
+      margin-top: 100px;
+      display: flex;
+      flex-direction: column;
+    }
+  }
   .bodydashboard{
     background: url(../img/bodydashboard.jpg);
     background-repeat:no-repeat ;
@@ -817,10 +849,39 @@ input[type="radio"]:checked ~ label {
   #menudash #menu-items .apart .title{
     margin-top: 40%;
   }
+/*dash*/
+@media screen and(min-width:1024) {
 
   .formudash{
-    background: url(../img/blanco.jpg);
-    width: 300px;
+    font-size: 25px;
+    display: grid;
+    grid-template:
+        "titulo titulo titulo" 10%
+        "prif segun colum22" 65%
+        "prif abaj abaj"  25%/
+         20% 40% 40%; 
+  }
+  .prif{
+    grid-area: prif; 
+    padding: 20px
+  }
+  .colum22{
+    grid-area: segun; 
+    padding: 15px;
+  }
+  .segun{
+    grid-area: column-3;  
+    padding: 15px; 
+  }
+  .ababj{
+    grid-area: abaj;
+    padding: 20px;
+    margin-top: -60px;
+  }
+
+}
+  .formudash{
+    background-color: var(--blanco); 
     margin-left: 30%;
     border-radius: 3px;
     padding: 80px 250px;
@@ -829,8 +890,7 @@ input[type="radio"]:checked ~ label {
     display: inline-block;
   }
 
-
-  .fotoangie{
+  .fotic{
    width: 50%;
    height: 50%;
   }
@@ -899,36 +959,179 @@ input[type="radio"]:checked ~ label {
 }
 
 .formbus{
-  background: url(../img/blanco.jpg);
+  background-color: var(--blanco);
   display: flex;
-  width: 22%;
-  margin-left: 14.5%;
+  width: 26.5%;
+  margin-left: 12%;
   padding-left: 8%;
   padding-right: 8%;
   padding-top: 6%;
-  padding-bottom: 6%  ;
-  box-shadow: 0 5px 5px rgba(20, 90, 20, .2);
+  padding-bottom: 5%  ;
+  box-shadow: 0 5px 5px rgba(17, 298, 11, 0.2);
 }
 
 .formform{
-  padding-right: 10%;
-  padding-left: 20%;
+  padding-right: 0%;
   margin: 0%;
 }
 
 .botonverh{
   display: flex;
   padding: 0%;
-  margin-left: 20%;
+  margin-left: 5%;
   margin-top: 13%;
-  width: 17.5%;
+  width: 100%;
 }
 
 .botonverh a{
   text-decoration: none;
-  font-size: 10px;
+  font-size: 12px;
   color: var(--blanco);
   background-color: var(--negro2);
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.formbus2{
+  background-color: var(--blanco);
+  display: flex;
+  width: 200%;
+  margin-left: 100%;
+  padding-left: 20%;
+  padding-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 5%;
+  box-shadow: 0 5px 5px rgba(17, 298, 11, 0.2);
+}
+
+.formform2{
+  padding-right: 0%;
+  margin: 2%;
+}
+
+.botonverh2{
+  display: flex;
+  padding: 0%;
+  margin-left: 5%;
+  margin-top: 13%;
+  width: 100%;
+}
+
+.botonverh2 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--blanco);
+  background-color: var(--negro2);
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/**/
+
+.formbus3{
+  background-color: var(--blanco);
+  display: flex;
+  width: 100%;
+  margin-left: 10%;
+  padding-left: 15%;
+  padding-right: 20%;
+  padding-top: 6%;
+  padding-bottom: 5%;
+  box-shadow: 0 5px 5px rgba(17, 298, 11, 0.2);
+}
+
+.formform3{
+  padding-right: 0%;
+  margin: 2%;
+}
+
+.botonverh3{
+  display: flex;
+  padding: 0%;
+  margin-left: 5%;
+  margin-top: 13%;
+  width: 100%;
+}
+
+.botonverh3 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--blanco);
+  background-color: var(--azuloscuro);
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/**/
+
+.formbus4{
+  background-color: var(--blanco);
+  display: flex;
+  width: 200%;
+  margin-left: 10%;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 5%;
+  box-shadow: 0 5px 5px rgba(17, 298, 11, 0.2);
+}
+
+.formform4{
+  padding-right: 0%;
+  margin: 2%;
+}
+
+.botonverh4{
+  display: flex;
+  padding: 0%;
+  margin-left: 5%;
+  margin-top: 13%;
+  width: 100%;
+}
+
+.botonverh4 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--blanco);
+  background-color: var(--negro2);
+  border-radius: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/**/
+
+.formbus5{
+  background-color: var(--blanco);
+  display: flex;
+  width: 200%;
+  margin-left: 10%;
+  padding-left: 15%;
+  padding-right: 10%;
+  padding-top: 6%;
+  padding-bottom: 5%;
+  box-shadow: 0 5px 5px rgba(17, 298, 11, 0.2);
+}
+
+.formform5{
+  padding-right: 0%;
+  margin: 2%;
+}
+
+.botonverh5{
+  display: flex;
+  padding: 0%;
+  margin-left: 5%;
+  margin-top: 13%;
+  width: 100%;
+}
+
+.botonverh5 a{
+  text-decoration: none;
+  font-size: 15px;
+  color: var(--blanco);
+  background-color: var(--azuloscuro);
   border-radius: 3px;
   padding-top: 5px;
   padding-bottom: 5px;
