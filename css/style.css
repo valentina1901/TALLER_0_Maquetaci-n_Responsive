@@ -1064,8 +1064,8 @@ input[type="radio"]:checked ~ label {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-/**/
 
+/**/
 .formbus4{
   background-color: var(--blanco);
   display: flex;
