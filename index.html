@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/20f85b24be.js" crossorigin="anonymous"></script>
-    <title>Hotelia</title>
-    <link href="img/hotelia campana.svg">
+    <title>Taller 0 Maquetacion Responsive</title>
+    <link rel="icon" href="img/hotelia campana.svg">
     <link href="css/style.css" rel="stylesheet">
 
 </head>
 <body>
-    
+
+    <!--Nav-->
     <nav>
         <div class="logoh">
             <img src="img/Hotelia horizontal blanco.svg">
@@ -23,13 +24,33 @@
         <a href="views/login.html" class="botonsesion"><i class="fa-solid fa-user"></i>Iniciar sesion</a>
         </div>  
     </nav>
-    <section>
-        <div class="container">
-        <img src="img/slide1.jpg">
-        <p>Lorem ipsum dolor sit ameteliter,<br>
-           consectetur adipisicing elit.</p>
-           </div>
-    </section>
+
+    <!--opaco-->
+    <div class="primerimg">
+        <div class="text-slider">
+            <p>Lorem ipsum dolor sit ameteliter<br>
+                consectetur adipiscing elit.
+            </p>
+        </div>
+    <div class="slide">
+        <img src="./img/slide1.jpg">
+    </div>
+    <div class="slide">
+        <img src="./img/slide2.png">
+    </div>
+    <div class="slide">
+        <img src="./img/slide1.jpg">
+    </div>
+     <!-- The dots/circles -->
+     <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      
+</div>
+
+    <!--Barsocial-->
+
     <div class="social">
         <a class="reservar">R</a>
         <a class="reservar">e</a>
@@ -40,9 +61,12 @@
         <a class="reservar">a</a>
         <a class="reservar">r</a>
     </div>
-    <section>
-        <div class="container2">
-        <p>
+
+    
+    <!--Informacion-->
+
+    <section class="container2">
+        <p class="contai">
             Estamos ubicados en el barrio La Cabrera al norte de Bogotá , 
             en un contexto de lujo donde interactúan los negocios , el ocio y el descanso , 
             gracias a su estratégica ubicación rodeada de bancos , restaurantes de alta cocina , 
@@ -53,8 +77,11 @@
             a base de productos locales, cargados de lo mejor de la tradición colombiana . 
           </p>
         <img src="img/Hotelia negro vertical.svg">
-     </div>
+
     </section>
+
+
+    <!--Servicios-->
 
     <section id="features">
         <h2 class="features-title">Razones por las que disfrutarás quedarte con nosotros</h2>
@@ -77,17 +104,24 @@
             </div>
         </div>
     </section>
+
+
+    <!--Ubicacion-->
+
     <div class="maps">
         <h1>Ubícanos</h1>
     </div>
-    <section>
-        
+    <section class="maps1">
         <iframe 
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.9644120169555!2d-74.07746738573697!3d4.600397243801296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99a7147877c9%3A0x378b95e9cbda0740!2sCra.%208%20%2312a-42%2C%20Bogot%C3%A1!5e0!3m2!1ses!2sco!4v1659100781539!5m2!1ses!2sco" 
         width="600" height="450" style="border:0;" allowfullscreen="" 
         loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
     </section>
+
+
+    <!--Direccion-->
+
     <footer>
         <h2>
             AVENIDA CARRERA 8 #12A - 42, BOGOTA D.C COLOMBIA
@@ -98,85 +132,94 @@
         </h2>
     </footer>
 
-    <nav class="usuarios">
+
+    <!--Opiniones-->
+
+    <section class="usuarios">
         <h1>
             Nuestros usuarios dicen...
         </h1>
-    </nav> 
-    <section class="comentarios">
-            <div class="circuloimg">
-                <img src="img/iconperson3.jpg" >
-                <div class="fichas-listado-v2">
-                    <div >
-                        <h2>Diego Rodriguez</h2>
-                        <p class="estrellas">
-                            <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
-                            --><label for="radio1" class="labelestre">★</label><!--
-                            --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
-                            --><label for="radio2" class="labelestre">★</label><!--
-                            --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
-                            --><label for="radio3" class="labelestre">★</label><!--
-                            --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
-                            --><label for="radio4" class="labelestre">★</label><!--
-                            --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
-                            --><label for="radio5" class="labelestre">★</label>
-                          </p>
-                          <div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-                
-            
-            <div class="circuloimg">
-                <img src="img/iconperson2.jpg" >
-                <div class="fichas-listado-v2">
-                    <div >
-                        <h2>Diana Garcia</h2>
-                        <p class="estrellas">
-                            <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
-                            --><label for="radio1" class="labelestre">★</label><!--
-                            --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
-                            --><label for="radio2" class="labelestre">★</label><!--
-                            --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
-                            --><label for="radio3" class="labelestre">★</label><!--
-                            --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
-                            --><label for="radio4"  class="labelestre">★</label><!--
-                            --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
-                            --><label for="radio5" class="labelestre">★</label>
-                          </p>
-                        <div>
-                          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                        </div>
-                    </div>
-                   </div>
-                </div>
-
-            <div class="circuloimg">
-                <img src="img/iconperson3.jpg" >
-                <div class="fichas-listado-v2">
-                    <div >
-                        <h2>Diego Rodriguez</h2>
-                        <p class="estrellas">
-                            <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
-                            --><label for="radio1" class="labelestre">★</label><!--
-                            --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
-                            --><label for="radio2" class="labelestre">★</label><!--
-                            --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
-                            --><label for="radio3"  class="labelestre">★</label><!--
-                            --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
-                            --><label for="radio4" class="labelestre">★</label><!--
-                            --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
-                            --><label for="radio5" class="labelestre">★</label>
-                          </p>
-                          <div>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                          </div>
-                    </div>
-                   </div>
-                </div>
     </section>
+    <div class="cajascoment">
+        <div class="caja1 margenderecha" > 
+            <div class="circuloimg">
+                <img src="img/diegohotelia.PNG" alt="">
+                <p class="diego">
+                    Diego Rodriguez
+                </p>
+                <p class="estrellas">
+                    <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
+                    --><label for="radio1" class="labelestre">★</label><!--
+                    --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
+                    --><label for="radio2" class="labelestre">★</label><!--
+                    --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
+                    --><label for="radio3" class="labelestre">★</label><!--
+                    --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
+                    --><label for="radio4" class="labelestre">★</label><!--
+                    --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
+                    --><label for="radio5" class="labelestre">★</label>
+                </p>
+            </div> 
+            <p class="parrafocaja">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Elit quis enim ultrices ullamcorper. Nunc aenean auctor vel 
+            diam dictum
+            </p>
+        </div>
+
+        <div class="caja2 margenderecha">
+            <div class="circuloimg">
+                <img src="img/dianahotelia.PNG" alt="">
+                <p class="diego">
+                    Diana Garcia
+                </p>
+                </div>
+            <p class="estrellas">
+                <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
+                --><label for="radio1" class="labelestre">★</label><!--
+                --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
+                --><label for="radio2" class="labelestre">★</label><!--
+                --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
+                --><label for="radio3" class="labelestre">★</label><!--
+                --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
+                --><label for="radio4" class="labelestre">★</label><!--
+                --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
+                --><label for="radio5" class="labelestre">★</label>
+              </p>
+              <p class="parrafocaja">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Elit quis enim ultrices ullamcorper. Nunc aenean auctor vel 
+                diam dictum
+                </p>
+        </div>
+
+        <div class="caja3">
+            <div class="circuloimg">
+                <img src="img/diegohotelia.PNG" alt="">
+                <p class="diego">
+                    Diego Rodriguez
+                    <p class="estrellas">
+                        <input id="radio1" class="inputestre" type="radio" name="estrella" value="5"><!--
+                        --><label for="radio1" class="labelestre">★</label><!--
+                        --><input id="radio2" class="inputestre" type="radio" name="estrella" value="4"><!--
+                        --><label for="radio2" class="labelestre">★</label><!--
+                        --><input id="radio3" class="inputestre" type="radio" name="estrella" value="3"><!--
+                        --><label for="radio3" class="labelestre">★</label><!--
+                        --><input id="radio4" class="inputestre" type="radio" name="estrella" value="2"><!--
+                        --><label for="radio4" class="labelestre">★</label><!--
+                        --><input id="radio5" class="inputestre" type="radio" name="estrella" value="1"><!--
+                        --><label for="radio5" class="labelestre">★</label>
+                      </p>
+                </p>
+               
+            </div> 
+            <p class="parrafocaja">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Elit quis enim ultrices ullamcorper. Nunc aenean auctor vel 
+                diam dictum
+                </p>
+        </div>
+    </div>
+    
+
+    <!--Footer-->
 
     <footer class="piepag">
         <div class="grup1">
@@ -184,11 +227,11 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                    Atque recusandae blanditiis delectus sunt molestiae temporibus!</p>
                    <div class="red-social">
-                    <a href="#" class="fa fa-instagram">
+                    <a href="https://www.instagram.com/" class="fa fa-instagram">
                     </a>
-                    <a href="#" class="fa fa-facebook">
+                    <a href="https://es-la.facebook.com/" class="fa fa-facebook">
                     </a>
-                    <a href="#" class="fa fa-twitter">
+                    <a href="https://twitter.com/?lang=es" class="fa fa-twitter">
                     </a>
                 </div>
             </div>
