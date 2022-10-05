@@ -13,27 +13,18 @@
 
 </head>
 <body class="bodyform">
-      <div class="bienvenido">
-        <img src="../img/Hotelia horizontal blanco.svg">
-        <h1>Eres mas que bienvenido</h1>
-      </div>
+  <div class="bienvenido">
+    <img src="../img/Hotelia horizontal blanco.svg">
+    <h1>Eres mas que bienvenido</h1>
+  </div>
       <div class="formhuesped">
+        <h1 class="titulo">
+          Regístrate
+      </h1>
         <div class="h1form">
-          <h1>
-              Regístrate
-          </h1>
         </div>
-          <div class="formuhuesped">
-          <div class="colum1">
+          <div class="column2">
           <div class="form-group">
-
-    <div class="formhuesped">
-          <div class="colum1">
-            <h1 class="h1f">
-              Regístrate
-          </h1>
-          <div class="form-group">
-        
             <label for="Tipo">Tipo de documento</label>
             <select name="menu" class="form-select">
                 <option value="">Escoge una opcion</option>
@@ -42,129 +33,81 @@
             </select>
           </div>
           <div class="form-group">
-            <label for="numerodoc">Numero de Documento</label>
-            <input class="form-control" name="numerodoc"  type="text">
-          </div>
-          <div class="form-group">
             <label for="nombres">Nombres</label>
             <input class="form-control" name="nombres" type="text">
-          </div>
-          <div class="form-group">
-            <label for="apellidos">Apellidos</label>
-            <input class="form-control" name="apellidos" type="text">
           </div>
           <div class="form-group">
             <label for="fecha">Fecha de Nacimiento</label>
             <input class="form-control" name="fecha" type="date">
           </div>
-          <div class="form-check">
-            <h5>Genero</h5>
-            <div class="geners">
-              <div class="checks"><label class="radio-inline">
-                <input type="radio">Mujer
-              </label><label class="radio-inline">
-                <input type="radio">Hombre
-              </label><label class="radio-inline">
-                <input type="radio">Otro
-              </label>
-            </div>
-          </div>
-        </div>
-      </div> 
-      <div class="colum2">
           <div class="form-group">
             <label for="email">Email</label>
             <input class="form-control" name="email" type="email">
-          </div>
-          <div>
-            <label for="telcon">Telefono de Contacto</label>
-            <input class="form-control" name="telcon"  type="text">
           </div>
           <div class="form-group">
             <label for="pais">Pais de Origen</label>
             <input class="form-control" name="pais"  type="text">
           </div>
           <div class="form-group">
-            <label for="foto">Foto</label>
-            <input class="form-control" name="foto" type="file" accept=".pdf,.jpg,.png" multiple>
-          </div>
-          <div class="form-group">
             <label for="">Contraseña</label>
             <input class="form-control" type="password">
+          </div>
+          <div class="column3">
+            <div class="form-group">
+              <label class="labelf"  for="numerodoc">Numero de documento</label>
+              <input name="numerodoc" type="number">
+            </div>
+            <div class="form-group">
+              <label for="apellidos">Apellidos</label>
+              <input class="form-control" name="apellidos" type="text">
+            </div>
+          <div class="form-check">
+            <h5>Genero</h5>
+            <div class="geners">
+              <form class="checks">
+                <label class="radio-inline">
+                <input type="radio">Mujer
+              </label><label class="radio-inline">
+                <input type="radio">Hombre
+              </label><label class="radio-inline">
+                <input type="radio">Otro
+              </label>
+            </form>
+        </div>
+      </div><br>
+          <div>
+            <label for="telcon">Telefono de Contacto</label>
+            <input class="form-control" name="telcon"  type="text">
+          </div>
+          
+          <div class="form-group">
+            <label for="foto">Foto</label>
+            <input class="form-control" name="foto" type="file" accept=".pdf,.jpg,.png" multiple>
           </div>
           <div class="form-group">
             <label for="">Confirmar contraseña</label>
             <input class="form-control" type="password">
           </div>
         </div>
-=======
-            <label class="labelf"  for="nombres">Nombres</label>
-            <input name="nombres"  type="text">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="fecha">Fecha nacimiento</label>
-            <input name="fecha" type="date">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="email">Email</label>
-            <input name="email" type="email">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="pais">País de origen</label>
-            <input name="pais" type="text">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="password">Contraseña</label>
-            <input name="password" type="password">
-          </div>
-        </div>
-
-        <div class="colum2">
-          <div class="form-group">
-            <label class="labelf"  for="numerodoc">Numero de documento</label>
-            <input name="numerodoc" type="number">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="apellidos">Apellidos</label>
-            <input name="apellidos"  type="text">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  >Genero</label>
-            <div class="generos">
-            <input type="radio" name="boton" value="1">Mujer
-            <input type="radio" name="boton" value="2">Hombre
-            <input type="radio" name="boton" value="3">Otro
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="tel">Teléfono de contacto</label>
-            <input name="tel" type="text">
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="">Foto</label>
-            <input type="file" 
-             name="adjunto" accept=".pdf,.jpg,.png" multiple>
-          </div>
-          <div class="form-group">
-            <label class="labelf"  for="">Contraseña</label>
+        <div class="contraseñas">
+          <div class="confirmar">
+            <label  for="">Contraseña</label>
             <input type="password">
           </div>
-
           <div class="form-group">
             <label class="labelf" for="">Confirmar contraseña</label>
             <input type="password">
-          </div>
+          </div><br>
           <div class="terminoscondiciones">
             <input type="checkbox" onclick="alert()" >
             <label class="labelf"  for="">Acepto Terminos y Condiciones</label>
-          </div>
-          <div class="botonform">
-          <a href="dashboardd.html">Ingresar</a>
-          </div>
+          </div><br>
+          <div class="footer">
+            <a class="buttonhh"><button class="buttonhh">Ingresar</button></a>
+        </div>
         </div>
       </div>
-            <a href="dashboardd.html">Ingresar</a>
-            </div>
+        </div>
         </div> 
       </div>
 </div>
